@@ -12,6 +12,25 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+   /* Colors */
+   --primary-color: #007bff;
+   --secondary-color: #6c757d;
+   --success-color: #28a745;
+   --danger-color: #dc3545;
+   
+   /* Breakpoints */
+   --sm-breakpoint: 576px;
+   --md-breakpoint: 768px;
+   --lg-breakpoint: 992px;
+   --xl-breakpoint: 1200px;
+   
+   /* Spacing */
+   --spacing-xs: 4px;
+   --spacing-sm: 8px;
+   --spacing-md: 16px;
+   --spacing-lg: 24px;
+   --spacing-xl: 32px;
 }
 
 a {
@@ -53,12 +72,14 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} /* colors */
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: var(--primary-color);
   }
   a:hover {
     color: #747bff;
