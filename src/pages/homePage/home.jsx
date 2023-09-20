@@ -1,14 +1,13 @@
-import MyForm from "./form";
+import "./home.css"
 
-import "./home.css";
 
-const Home = () => {
-  return (
-    <>
-      <h1>HELLO I AM HOME page</h1>
-      <MyForm />
-    </>
-  );
-};
+function Home() {
+    return (
+        <>
+            <Header />
+            <Main />
+        </>
+    )
+}
 
-export default Home;
+export default Home
