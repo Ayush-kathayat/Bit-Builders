@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
-import './style.css'
+import './Quiz.css'
 
-import data from '../../data/data'
-import Card from './Card';
+import data from '../../../data/data'
+import QuestionCard from './components/QuestionCar';
+
+import Button from 'react-bootstrap/Button';
+import { Container, Row, Col } from "react-bootstrap";
+
 
 function Quiz() {
     const question_quantity = data.length
@@ -11,7 +15,7 @@ function Quiz() {
 
     const prevQuestion = () => {
         console.log(currentQuestion)
-        if (currentQuestion == 0 || currentQuestion<0) { }
+        if (currentQuestion == 0 || currentQuestion < 0) { }
         else {
             setcurrentQuestion(currentQuestion - 1);
         }
@@ -20,37 +24,38 @@ function Quiz() {
     const nextQuestion = () => {
         console.log(currentQuestion)
 
-        if (currentQuestion == data.length-1) { }
+        if (currentQuestion == data.length - 1) { }
         else {
             setcurrentQuestion(currentQuestion + 1);
         }
     }
 
     return (
-        <div className="container mt-5">
-            <div className="d-flex justify-content-center row">
-                <div className="col-md-10 col-lg-10">
-                    <div className="border">
-                        <div className="question bg-white p-3 border-bottom">
-                            <div className="d-flex flex-row justify-content-between align-items-center mcq">
-                                <h4>MCQ Quiz</h4>
-                                <span>({question.id + 1} of {question_quantity})</span>
-                            </div>
-                        </div>
-
-                        <Card question={question} options={question.options} />
-
-                    </div>
-                    <div className="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
-                        <button className="btn btn-primary d-flex align-items-center btn-danger" type="button" onClick={prevQuestion}>
-                            &nbsp;previous
-                        </button>
-                        <button className="btn btn-primary border-success align-items-center btn-success" type="button" onClick={nextQuestion}>
-                            Next
-                        </button>
-                    </div>
-                </div>
-            </div>
+        <div className='quiz'>
+            <Container>
+                <Row className='float-end'>
+                    <div style={{ float: 'right' }}>Time left</div>
+                    <div style={{ float: 'right' }}>Time left</div>
+                </Row>
+                <Row>
+                    <Col>
+                        <span className='text-left'>({question.id + 1} of {question_quantity})</span>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <QuestionCard data={question} />
+                    </Col>
+                </Row>
+                <Row className='pt-4'>
+                    <Col>
+                        <Button variant="outline-dark" onClick={prevQuestion}>Previous</Button>
+                    </Col>
+                    <Col >
+                        <Button variant="outline-dark" onClick={nextQuestion} className='float-end'>Next</Button>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     )
 }

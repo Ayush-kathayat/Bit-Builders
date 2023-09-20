@@ -1,0 +1,21 @@
+.quiz{
+background: #ffeaea;
+padding: 3rem;
+margin: 5rem;
+}
+
+/* .card {
+  width: 100%;
+  margin: 0 auto;
+  font-family: sans-serif;
+  /* background: linear-gradient(to right, #ececec, #ffffff); */
+
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+} */
+
+
+/* @media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+} */

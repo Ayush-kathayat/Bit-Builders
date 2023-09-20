@@ -23,7 +23,7 @@
 }
 
 #header .logo a {
-    color: #5f687b;
+    color: #292929;
 }
 
 #header .logo img {
@@ -36,12 +36,7 @@
     }
 }
 
-/*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
-/**
-  * Desktop Navigation 
-  */
+
 .navbar {
     padding: 0;
 }
@@ -83,7 +78,7 @@
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: #16df7e;
+    color: #3498db;
 }
 
 .navbar .getstarted,
@@ -100,9 +95,9 @@
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-    background: #206bfb;
+    background: #3498db;
     color: #fff;
-    border-color: #206bfb;
+    border-color: #3498db;
 }
 
 .navbar .dropdown ul {
@@ -139,7 +134,7 @@
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-    color: #16df7e;
+    color: #3498db;
 }
 
 .navbar .dropdown:hover>ul {
@@ -239,7 +234,7 @@
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-    color: #16df7e;
+    color: #3498db;
 }
 
 .navbar-mobile .getstarted,
@@ -275,7 +270,7 @@
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-    color: #16df7e;
+    color: #3498db;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
