@@ -37,7 +37,7 @@ function Quiz() {
           <Row>
             <div className="text-end">Time left:</div>
             <span className="text-left">
-              ({question.id + 1} of {question_quantity})
+              ({question.id } of {question_quantity})
             </span>
           </Row>
           <Row className="float-end"></Row>
