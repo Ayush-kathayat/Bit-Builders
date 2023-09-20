@@ -81,3 +81,8 @@
 .services .icon-box:hover .icon i {
   color: #3498db;
 }
+
+.feat-name{
+  font-weight: bolder;
+  margin-bottom: 3rem;
+}
