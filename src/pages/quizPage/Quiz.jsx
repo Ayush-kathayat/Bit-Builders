@@ -31,31 +31,32 @@ function Quiz() {
     }
 
     return (
-        <div className='quiz'>
-            <Container>
-                <Row className='float-end'>
-                    <div style={{ float: 'right' }}>Time left</div>
-                    <div style={{ float: 'right' }}>Time left</div>
-                </Row>
-                <Row>
-                    <Col>
+        <div>
+            <p className='fs-3 fw-bolder text-center mt-5'>Quiz: Level-Easy</p>
+            <div className='quiz'>
+                <Container>
+                    <Row>
+                        <div className="text-end">Time left:</div>
                         <span className='text-left'>({question.id + 1} of {question_quantity})</span>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <QuestionCard data={question} />
-                    </Col>
-                </Row>
-                <Row className='pt-4'>
-                    <Col>
-                        <Button variant="outline-dark" onClick={prevQuestion}>Previous</Button>
-                    </Col>
-                    <Col >
-                        <Button variant="outline-dark" onClick={nextQuestion} className='float-end'>Next</Button>
-                    </Col>
-                </Row>
-            </Container>
+                    </Row>
+                    <Row className='float-end'>
+
+                    </Row>
+                    <Row>
+                        <Col>
+                            <QuestionCard data={question} />
+                        </Col>
+                    </Row>
+                    <Row className='pt-4'>
+                        <Col>
+                            <Button variant="outline-dark" onClick={prevQuestion}>Previous</Button>
+                        </Col>
+                        <Col >
+                            <Button variant="outline-dark" onClick={nextQuestion} className='float-end'>Next</Button>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
         </div>
     )
 }
