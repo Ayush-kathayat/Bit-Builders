@@ -1,8 +1,14 @@
-import "./home.css"
+import React from 'react'
+import Header from './components/Header'
+import Main from './components/Main'
 
-const Home = () => {
+function home() {
+    return (
+        <>
+            <Header />
+            <Main />
+        </>
+    )
+}
 
-    return (<h>HELLO I AM HOME page</h>)
-};
-
-export default Home;
+export default home
