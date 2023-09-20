@@ -146,3 +146,14 @@
     }
   }
   
+  .contact-name{
+    margin-bottom  : 3rem;
+    font-weight : bolder;
+  }
+
+  .insta , .facebook , .twitter{
+    margin-right : 2rem;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+  }

@@ -6,6 +6,12 @@ import LandingPage from "./pages/landingPage/landingPage";
 import Home from "./pages/homePage/home";
 import Quiz from './pages/quizPage/Quiz';
 
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
+AOS.init();
+
+
 const App = () => {
   return (
     <Router>
