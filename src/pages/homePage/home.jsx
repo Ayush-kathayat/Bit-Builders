@@ -1,8 +1,14 @@
-import "./home.css"
+import MyForm from "./form";
+
+import "./home.css";
 
 const Home = () => {
-
-    return (<h>HELLO I AM HOME page</h>)
+  return (
+    <>
+      <h1>HELLO I AM HOME page</h1>
+      <MyForm />
+    </>
+  );
 };
 
 export default Home;
