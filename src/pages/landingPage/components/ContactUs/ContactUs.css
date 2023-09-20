@@ -2,8 +2,11 @@
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact{
-  margin-top: 7rem;
+
+
+#contact{
+  margin : 0rem;
+  margin-top :5rem;
 }
 
 .contact .contact-about h3 {
