@@ -5,6 +5,7 @@ const Quiz = () => {
     const [score, setScore] = useState(0);
     const [answers, setAnswers] = useState([]);
     const [showScore, setShowScore] = useState(false);
+    // a small comment
     // Add quiz questions and answer options here
     return (
       <div>
