@@ -14,7 +14,7 @@ const MyForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className="bg-image">
       <div className="form-wrapper">
         {/* // First Name */}
         <div className="first-name">

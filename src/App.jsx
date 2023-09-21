@@ -3,7 +3,7 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import LandingPage from "./pages/landingPage/landingPage";
-import Home from "./pages/homePage/home";
+import Home from "./pages/homePage/Home";
 import Quiz from './pages/quizPage/Quiz';
 import Auth from './pages/authentication/Auth'
 

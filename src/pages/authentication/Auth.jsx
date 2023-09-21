@@ -16,7 +16,7 @@ const Auth = () => {
     };
 
     return (
-        <div>
+        <div className="bg-image">
             <p className="text-center fs-2 fw-bolder p-5">Signup Page</p>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-group">

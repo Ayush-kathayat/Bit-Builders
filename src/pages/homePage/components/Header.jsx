@@ -1,16 +1,17 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+
 import { MdOutlineAccountCircle } from 'react-icons/md'
 
 function Header() {
     return (
-        <Navbar className="bg-body-tertiary">
+        <Navbar>
             <Container>
-                <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
+                <Navbar.Brand href="#home" className='fs-4'>Home</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
-                    <MdOutlineAccountCircle />
+                    <MdOutlineAccountCircle size={30} />
                 </Navbar.Collapse>
             </Container>
         </Navbar>)
