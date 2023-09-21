@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./Quiz.css";
 
 import data from "../../../data/data";
@@ -15,6 +15,7 @@ function Quiz() {
   const prevQuestion = () => {
     console.log(currentQuestion);
     if (currentQuestion == 0 || currentQuestion < 0) {
+      return ;
     } else {
       setcurrentQuestion(currentQuestion - 1);
     }
@@ -24,20 +25,21 @@ function Quiz() {
     console.log(currentQuestion);
 
     if (currentQuestion == data.length - 1) {
+      return ;
     } else {
       setcurrentQuestion(currentQuestion + 1);
     }
   };
 
   return (
-    <div>
-      <p className="fs-3 fw-bolder text-center mt-5">Quiz: Level-Easy</p>
+    <div className="top">
+      <p className="fs-3 fw-bolder text-center pt-5">Quiz: Level-Easy</p>
       <div className="quiz">
         <Container>
           <Row>
             <div className="text-end">Time left:</div>
             <span className="text-left">
-              ({question.id } of {question_quantity})
+              ({question.id} of {question_quantity})
             </span>
           </Row>
           <Row className="float-end"></Row>
@@ -48,13 +50,13 @@ function Quiz() {
           </Row>
           <Row className="pt-4">
             <Col>
-              <Button variant="outline-dark" onClick={prevQuestion}>
+              <Button variant="outline-light" onClick={prevQuestion}>
                 Previous
               </Button>
             </Col>
             <Col>
               <Button
-                variant="outline-dark"
+                variant="outline-light"
                 onClick={nextQuestion}
                 className="float-end"
               >
