@@ -27,3 +27,9 @@ margin: 5rem;
     width: 100%;
   }
 } */
+
+.quiz-sub-btn{
+  margin-right : 43rem;
+  position: relative;
+  bottom : 2rem;
+}

@@ -14,7 +14,7 @@ function Main() {
           <div className="px-5">
             <div className="user fs-1 fw-semibold">Hi, user</div>
             <p className="fs-5">
-              Let's get your incredible journey begin already
+              Let's get your incredible journey started
             </p>
           </div>
         </Col>

@@ -28,7 +28,7 @@ const Auth = () => {
                   required: "First name is required",
                 })}
                 className="form-control input-first-name py-3 px-3 "
-                placeholder="Enter name"
+                placeholder="Enter first name"
               />
               {errors.firstName && (
                 <div className="first-name-invalid invalid">
@@ -43,7 +43,7 @@ const Auth = () => {
               <input
                 {...register("lastName", { required: "Last name is required" })}
                 className="form-control input-last-name py-3 px-3 "
-                placeholder="Enter name"
+                placeholder="Enter last name"
               />
               {errors.lastName && (
                 <div className="last-name-invalid invalid">
@@ -58,7 +58,7 @@ const Auth = () => {
               <input
                 {...register("email", { required: "Email is required" })}
                 className="form-control email py-3 px-3 "
-                placeholder="Enter name"
+                placeholder="Enter Email"
               />
               {errors.email && (
                 <div className="email-invalid invalid">
@@ -77,7 +77,7 @@ const Auth = () => {
                   required: "Mobile Number is required",
                 })}
                 className="form-control contact py-3 px-3 "
-                placeholder="Enter name"
+                placeholder="Enter contact"
               />
               {errors.contact && (
                 <div className="mobile-invalid invalid">
@@ -149,7 +149,7 @@ const Auth = () => {
 
             <div className="field">
               {/* <label className="stream-form-label fs-4">Field</label> */}
-              <label className="my-2 pt-5 fs-4">Field</label>
+              <label className="my-2 pt-5 fs-4">Do you want to continue in your field?</label>
               <div>
                 <label className="m-0 my-0 mx-5">
                   <input
@@ -184,7 +184,7 @@ const Auth = () => {
             </div>
             {/* below asking for the 4 intresting subjects */}
 
-            <div className="intrest">
+            {/* <div className="intrest">
               <label className="my-2 pt-5 fs-5">Favorite Subjects</label>
               <div className="subjects mx-5">
                 {" "}
@@ -218,7 +218,7 @@ const Auth = () => {
                   className="form-control input-first-name py-3 px-3 my-2"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="text-center pb-5">
             <Link to="/Home">

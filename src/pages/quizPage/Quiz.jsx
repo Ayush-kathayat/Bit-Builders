@@ -1,5 +1,6 @@
-import  { useState } from "react";
+import { useState } from "react";
 import "./Quiz.css";
+import { Link } from "react-router-dom";
 
 import data from "../../../data/data";
 import QuestionCard from "./components/QuestionCar";
@@ -15,7 +16,7 @@ function Quiz() {
   const prevQuestion = () => {
     console.log(currentQuestion);
     if (currentQuestion == 0 || currentQuestion < 0) {
-      return ;
+      return;
     } else {
       setcurrentQuestion(currentQuestion - 1);
     }
@@ -25,7 +26,7 @@ function Quiz() {
     console.log(currentQuestion);
 
     if (currentQuestion == data.length - 1) {
-      return ;
+      return;
     } else {
       setcurrentQuestion(currentQuestion + 1);
     }
@@ -66,6 +67,17 @@ function Quiz() {
           </Row>
         </Container>
       </div>
+
+    
+        <Link to="/Home">
+          <Button
+            variant="outline-dark"
+            className=" float-end quiz-sub-btn"
+          >
+            SUBMIT
+          </Button>
+        </Link>
+  
     </div>
   );
 }

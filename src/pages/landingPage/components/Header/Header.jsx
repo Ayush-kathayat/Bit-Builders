@@ -59,7 +59,7 @@ function Header() {
                     {isMobile && <IoReorderThreeOutline />}
 
                     <Link to="/auth">
-                        <button type="button" className="btn btn-outline-primary">Sign in</button>
+                        <button type="button" className="btn btn-outline-primary">Sign up</button>
                     </Link>
 
                     {/* <i className="bi bi-list mobile-nav-toggle"></i> */}
