@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import "./form.css";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 const Auth = () => {
   const {
@@ -220,9 +221,17 @@ const Auth = () => {
             </div>
           </div>
           <div className="text-center pb-5">
-            <Button variant="primary" size="lg" type="submit" className="sub-btn">
-            SUBMIT
-            </Button>
+            <Link to="/Home">
+              {" "}
+              <Button
+                variant="primary"
+                size="lg"
+                type="submit"
+                className="sub-btn"
+              >
+                SUBMIT
+              </Button>
+            </Link>
           </div>
         </form>
       </div>

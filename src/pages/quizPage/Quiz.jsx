@@ -50,13 +50,13 @@ function Quiz() {
           </Row>
           <Row className="pt-4">
             <Col>
-              <Button variant="outline-light" onClick={prevQuestion}>
+              <Button variant="outline-dark" onClick={prevQuestion}>
                 Previous
               </Button>
             </Col>
             <Col>
               <Button
-                variant="outline-light"
+                variant="outline-dark"
                 onClick={nextQuestion}
                 className="float-end"
               >

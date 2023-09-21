@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import './Header.css'
-import { AiOutlineDown, AiOutlineRight } from 'react-icons/ai'
 import { IoReorderThreeOutline } from 'react-icons/io5'
 
 import { Link } from 'react-router-dom';
@@ -60,7 +59,7 @@ function Header() {
                     {isMobile && <IoReorderThreeOutline />}
 
                     <Link to="/auth">
-                        <button type="button" class="btn btn-outline-primary">Sign in</button>
+                        <button type="button" className="btn btn-outline-primary">Sign in</button>
                     </Link>
 
                     {/* <i className="bi bi-list mobile-nav-toggle"></i> */}
