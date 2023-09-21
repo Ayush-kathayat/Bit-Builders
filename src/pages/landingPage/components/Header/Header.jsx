@@ -3,24 +3,22 @@ import './Header.css'
 import { AiOutlineDown, AiOutlineRight } from 'react-icons/ai'
 import { IoReorderThreeOutline } from 'react-icons/io5'
 
+import { Link } from 'react-router-dom';
 
 function Header() {
-
-
-    
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth <= 768);
-      };
-  
-      window.addEventListener('resize', handleResize);
-  
-      // Cleanup the event listener on component unmount
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     return (
@@ -58,9 +56,13 @@ function Header() {
                             </ul>
                         </li> */}
                         {/* <li><a className="nav-link scrollto" href="#contact">Contact</a></li> */}
-                        <li><a className="getstarted scrollto" href="#about">Get Started</a></li>
                     </ul>
                     {isMobile && <IoReorderThreeOutline />}
+
+                    <Link to="/auth">
+                        <button type="button" class="btn btn-outline-primary">Sign in</button>
+                    </Link>
+
                     {/* <i className="bi bi-list mobile-nav-toggle"></i> */}
                 </nav>
 
