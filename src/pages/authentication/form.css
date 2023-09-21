@@ -1,4 +1,6 @@
-
+.form-top{
+    margin-left : 20rem;
+}
 
 .form-wrapper{
     display : flex;
@@ -7,8 +9,23 @@
     margin-right : 9rem;
 
 }
+.form-control{
+    -webkit-box-shadow: 10px 12px 40px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 12px 40px -14px rgba(0,0,0,0.75);
+    box-shadow: 10px 12px 40px -14px rgba(0,0,0,0.75);
+    
+}
+
+.Auth-body {
+    background-image: url("../../../img/blob-scene-haikei.svg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+
 .form-group {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
   }
   
@@ -25,11 +42,7 @@ input{
     height: 1.8rem;
 }
 
-.first-name , .last-name , .email , .contact , .stream , .field , .intrest {
-    margin : 1.2rem;
-    display : flex;
-    align-items: center;
-}
+
 
 .email-form-label{
     margin-right : 4.5rem;
@@ -46,17 +59,7 @@ input{
     
 }
 
-.first-name{
-    margin-left : 14.5rem;
-}
 
-.email{
-    margin-left : 12rem;
-}
-
-.contact{
-    margin-left : 13rem;
-}
 
 .subjects{
     display : flex;
@@ -68,7 +71,20 @@ input{
     margin : 0.8rem;
 }
 
-.stream-sub{
+/* .stream-sub{
     display : flex;
+    margin : 0;
+} */
+
+.input-first-name{
+    width : 50%;
 }
 
+.sign-text{
+    margin-right : 20rem;
+}
+
+.sub-btn{
+    margin-right : 19rem;
+    margin-top : 5rem;
+}
