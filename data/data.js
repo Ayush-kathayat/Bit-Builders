@@ -22,7 +22,6 @@ const data = [
     question:
       "During which phase of a typical workout should static stretching be performed?",
     options: [
-      ,
       "Before the workout",
       "After the worko",
       "In the middle of the workout",
@@ -41,7 +40,6 @@ const data = [
     question:
       "Which muscle is responsible for the movement of the shoulder joint?",
     options: [
-      ,
       "Biceps brachii",
       "Deltoid",
       "Gastrocnemius",
@@ -53,7 +51,7 @@ const data = [
     id: 7,
     question:
       "What is the primary energy source for short bursts of high-intensity physical activity?",
-    options: [, "Carbohydrates", "Proteins", "Fats", "Vitamins"],
+    options: ["Carbohydrates", "Proteins", "Fats", "Vitamins"],
     answer: "Carbohydrates",
   },
   {
