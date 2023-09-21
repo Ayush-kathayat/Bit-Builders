@@ -17,11 +17,9 @@ function ContactUs() {
             data-aos-delay="100"
           >
             <div className="contact-about">
-              <h3>Vesperr</h3>
+              <h3>Career Counselling</h3>
               <p>
-                Cras fermentum odio eu feugiat. Justo eget magna fermentum
-                iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
-                fermentum leo. Amet volutpat consequat mauris nunc congue.
+                We are here to guide the youth towards a brighter future with the help of AI. Let's all give our best and make world full of innovation. 
               </p>
               <div className="social-links">
                 <FaInstagram className="insta" />
